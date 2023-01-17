@@ -66,17 +66,8 @@ model VerificationToken {
 }
 
 model Recipe {
-    id         String       @id @default(cuid())
+    id         String @id @default(cuid())
     name       String
-    ingredient Ingredient[]
+    ingredient String
     directions String
-}
-
-model Ingredient {
-    id               String  @id @default(cuid())
-    ingredientName   String
-    ingredientId     Int
-    ingredientAmount String
-    Recipe           Recipe? @relation(fields: [recipeId], references: [id])
-    recipeId         String?
 }

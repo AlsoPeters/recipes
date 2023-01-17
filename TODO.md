@@ -1,1 +1,3 @@
 - as a user, i should be able to upload a recipe
+  - show an error if recipe name is empty
+  - show an error if recipe directions is empty
