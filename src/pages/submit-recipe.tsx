@@ -6,7 +6,7 @@ import React, { useState } from "react";
 import { useRouter } from "next/router";
 import Link from "next/link";
 
-const Home: NextPage = () => {
+const SubmitRecipePage: NextPage = () => {
   const createRecipeMutation = api.recipes.createRecipe.useMutation();
 
   const [directions, setDirections] = useState("");
@@ -73,4 +73,4 @@ const Home: NextPage = () => {
   );
 };
 
-export default Home;
+export default SubmitRecipePage;
