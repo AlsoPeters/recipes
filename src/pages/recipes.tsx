@@ -18,18 +18,16 @@ const RecipesPage: NextPage = () => {
         <h1>Recipes</h1>
         <Link href="/">Home</Link>
 
-        <table>
-          <thead>RECIPES</thead>
-          <tbody>
-            {recipes.data?.map((recipe) => (
-              <tr key={recipe.id}>
-                <td>{recipe.name}</td>
-                <td>{recipe.ingredient}</td>
-                <td>{recipe.directions}</td>
-              </tr>
-            ))}
-          </tbody>
-        </table>
+        <h2>RECIPES</h2>
+        <div>
+          {recipes.data?.map((recipe) => (
+            <div key={recipe.id}>
+              <div>{recipe.name}</div>
+              <div>{recipe.ingredient}</div>
+              <div>{recipe.directions}</div>
+            </div>
+          ))}
+        </div>
       </main>
     </>
   );
